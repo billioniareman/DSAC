@@ -5,115 +5,67 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56b2c707-eecb-47c7-b7b8-06c15bd7ca44" name="Changes" comment="this is my new updates1/11/23">
-      <change afterPath="$PROJECT_DIR$/.idea/DSAC-web.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/faa2b527-98a0-438f-b831-3834ef01a356.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/faa2b527-98a0-438f-b831-3834ef01a356/storage_v2/_src_/schema/main.uQUzAA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/instance/dsac.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routepage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/apple-touch-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/clients/client-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/clients/client-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/clients/client-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/clients/client-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/clients/client-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/clients/client-6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/favicon2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/hero-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/hero-bg2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/oldabout.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/team/team1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/team/team2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/team/team3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/team/team4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/team/team5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/team/team6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/scss/Readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/aos/aos.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/aos/aos.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap-icons/bootstrap-icons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap-icons/bootstrap-icons.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap-icons/bootstrap-icons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-grid.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-grid.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-grid.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-utilities.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-utilities.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-utilities.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-utilities.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.esm.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.esm.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.esm.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/boxicons/css/animations.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/boxicons/css/boxicons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/boxicons/css/boxicons.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/boxicons/css/transformations.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/boxicons/fonts/boxicons.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/boxicons/fonts/boxicons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/boxicons/fonts/boxicons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/boxicons/fonts/boxicons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/boxicons/fonts/boxicons.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/glightbox/css/glightbox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/glightbox/css/glightbox.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/glightbox/css/plyr.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/glightbox/css/plyr.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/glightbox/js/glightbox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/glightbox/js/glightbox.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/isotope-layout/isotope.pkgd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/isotope-layout/isotope.pkgd.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/php-email-form/validate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/swiper/swiper-bundle.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/swiper/swiper-bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/swiper/swiper-bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/membership.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/clients/download.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/clients/keras.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/clients/matplot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/clients/pytorch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/clients/seaborn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/clients/sklearn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/team/mentor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/team/team12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/team/team13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/team/team14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/team/team16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/team/team17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/team/team2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/team/team3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/team/team4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/team/team5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/team/team7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/team/team8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/QuotaService (1).js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/QuotaService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/assets/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/assets/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/assets/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/assets/fonts/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/assets/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/assets/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/assets/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/assets/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/assets/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/assets/img/about-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/assets/img/contact-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/assets/img/home-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/assets/img/post-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/assets/img/post-sample-image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/assets/js/clean-blog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/createblog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/readblog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/instance/dsac.db" beforeDir="false" afterPath="$PROJECT_DIR$/instance/dsac.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routepage.py" beforeDir="false" afterPath="$PROJECT_DIR$/routepage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/clients/client-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/clients/client-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/clients/client-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/clients/client-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/clients/client-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/clients/client-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/team/team1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/img/team/team11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/team/team2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/img/team/team9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/team/team3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/img/team/team10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/team/team4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/img/team/team1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/team/team5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/img/team/team15.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/team/team6.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/img/team/team6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/membership.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/membership.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,8 +75,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -158,20 +110,23 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Flask server.DSAC-webcode-master.executor&quot;: &quot;Run&quot;,
     &quot;Notification.DisplayName-DoNotAsk-Vcs Important Messages&quot;: &quot;VCS important messages&quot;,
     &quot;Notification.DoNotAsk-Vcs Important Messages&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Asus/OneDrive/Desktop/CodeOnly/DSAC-webcode-master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Asus/OneDrive/Desktop/CodeOnly/DSAC-webcode-master/static/assets/img/clients&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.project&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -180,9 +135,15 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Flask server.DSAC-web">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Asus\OneDrive\Desktop\CodeOnly\DSAC-webcode-master\static\assets\img\clients" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Unknown.Flask (routepage.py)2097259631">
     <configuration name="DSAC-web" type="PythonConfigurationType" factoryName="Python">
       <module name="DSAC-web" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -203,8 +164,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="docs" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DSAC-web" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/docs.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="require" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DSAC-web" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -227,6 +212,7 @@
     </configuration>
     <configuration name="routepage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DSAC-web" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -249,6 +235,7 @@
     </configuration>
     <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DSAC-web" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -273,6 +260,7 @@
       <module name="DSAC-web" />
       <option name="target" value="$PROJECT_DIR$/routepage.py" />
       <option name="targetType" value="PATH" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -284,13 +272,61 @@
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
+    <configuration name="DSAC-webcode-master" type="Python.FlaskServer">
+      <module name="DSAC-webcode-master" />
+      <option name="target" value="$PROJECT_DIR$/routepage.py" />
+      <option name="targetType" value="PATH" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Flask (routepage.py)" type="Python.FlaskServer" nameIsGenerated="true">
+      <option name="flaskDebug" value="true" />
+      <module name="DSAC-web" />
+      <option name="target" value="$PROJECT_DIR$/routepage.py" />
+      <option name="targetType" value="PATH" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.DSAC-web" />
+      <item itemvalue="Python.docs" />
+      <item itemvalue="Python.require" />
+      <item itemvalue="Python.routepage" />
+      <item itemvalue="Python.run" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.require" />
         <item itemvalue="Python.run" />
+        <item itemvalue="Python.docs" />
+        <item itemvalue="Python.require" />
         <item itemvalue="Python.routepage" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-98f27166c754-ba05f1cad1b1-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.21829.153" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -308,6 +344,20 @@
       <workItem from="1698864998137" duration="905000" />
       <workItem from="1698866317956" duration="4205000" />
       <workItem from="1698946652773" duration="29000" />
+      <workItem from="1699021907335" duration="1263000" />
+      <workItem from="1699120719193" duration="12705000" />
+      <workItem from="1699166376753" duration="2456000" />
+      <workItem from="1699213764690" duration="1987000" />
+      <workItem from="1699513395254" duration="14392000" />
+      <workItem from="1699720246760" duration="832000" />
+      <workItem from="1699765721792" duration="590000" />
+      <workItem from="1699956921200" duration="309000" />
+      <workItem from="1700031610297" duration="132000" />
+      <workItem from="1700919519617" duration="651000" />
+      <workItem from="1700924947983" duration="3048000" />
+      <workItem from="1701024182366" duration="1972000" />
+      <workItem from="1709017476463" duration="935000" />
+      <workItem from="1709018946961" duration="57000" />
     </task>
     <servers />
   </component>
@@ -331,7 +381,12 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DSAC_webcode_master$run.coverage" NAME="run Coverage Results" MODIFIED="1698867263328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/routepage_py$docs.coverage" NAME="docs Coverage Results" MODIFIED="1699128040463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/routepage_py$routepage.coverage" NAME="routepage Coverage Results" MODIFIED="1698784743184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DSAC_webcode_master$require.coverage" NAME="require Coverage Results" MODIFIED="1698867321504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/routepage_py$DSAC_web.coverage" NAME="DSAC-web Coverage Results" MODIFIED="1701025124733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/routepage_py$Flask__routepage_py_.coverage" NAME="Flask (routepage.py) Coverage Results" MODIFIED="1700926695793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/routepage_py$run.coverage" NAME="run Coverage Results" MODIFIED="1699517233890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/routepage_py$DSAC_webcode_master.coverage" NAME="DSAC-webcode-master Coverage Results" MODIFIED="1709017560934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

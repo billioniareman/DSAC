@@ -6,8 +6,9 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>DSAC</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+<meta name="description" content="Data Science & Analytics Club website. Explore events, team, and join the community.">
+<meta name="keywords" content="Data Science, Analytics, Club, Events, Membership, Blog">
+
 
   <!-- Favicons -->
   <link href="{{ url_for('static', filename='assets/img/favicon.png') }}" rel="icon">
@@ -15,17 +16,9 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-        {##}
-        {#  <!-- Vendor CSS Files -->#}
-        {#  <link href="{{ url_for('static', filename='assets/vendor/aos/aos.css')}}" rel="stylesheet">#}
-        {#  <link href="{{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">#}
-        {#  <link href="{{ url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">#}
-        {#  <link href="{{ url_for('static', filename='assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">#}
-        {#  <link href="{{ url_for('static', filename='assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">#}
-        {#  <link href="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">#}
-        {#  <!-- Template Main CSS File -->#}
 
     <link href="{{ url_for('static', filename='assets/css/style.css')}}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
@@ -33,47 +26,28 @@
 
 <body>
 
-  <!-- ======= Top Bar ======= -->
-  <section id="topbar" class="d-flex align-items-center">
-    <div class="container d-flex justify-content-center justify-content-md-between">
-      <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope-fill"></i><a href="mailto:dsac@acropolis.in">dsac@acropolis.in</a>
-        <i class="bi bi-phone-fill phone-icon"></i> +91 9893023657
-      </div>
-      <div class="social-links d-none d-md-block">
-
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="https://www.instagram.com/dsac_aitr/" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="https://www.linkedin.com/groups/9162826/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div>
-    </div>
-  </section>
-
   <!-- ======= Header ======= -->
-  <header id="header" class="d-flex align-items-center">
+<header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
+        <a href="/" class="navbar-brand d-flex align-items-center">
+            <img style="height: 90px; width: auto; margin-right: 15px;" src="{{ url_for('static', filename='assets/img/favicon.png') }}" alt="Logo">
+            <!-- Optional: Add a title or branding text here if needed -->
+        </a>
 
-      <img style="height:10%; width:10%; margin-right:0px;"  src="{{url_for('static',filename='assets/img/favicon.png')}}">
-
-      <h1 style="text-align:left;" class="logo"><a href="/">DSAC</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-      <nav id="navbar" class="navbar">
-
-        <ul>
-          <li><a class="nav-link scrollto " href="/">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li><a class="nav-link" href="/membership" >Membership</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                <li><a class="nav-link scrollto" href="#about">About</a></li>
+                <li><a class="nav-link scrollto" href="#team">Team</a></li>
+                <li><a class="nav-link scrollto" href="#events">Events</a></li>
+                <li><a class="nav-link" href="/show_post" >Blog</a></li>
+                <li><a class="nav-link" href="/membership" >Membership</a></li>
+                <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
     </div>
-  </header><!-- End Header -->
+</header>
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
@@ -91,12 +65,12 @@
 
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
-            <img src="{{ url_for('static', filename='assets/img/about.jpeg')}}" class="img-fluid" alt="">
+              <img src="{{ url_for('static', filename='assets/img/oldabout.jpg') }}" class="img-fluid" alt="About DSAC Image">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
             <h3>Data Science & Analytics Club</h3>
             <p class="fst-italic">
-              
+
             </p>
             <p>
               Data science is the study of data to extract meaningful insights
@@ -155,27 +129,27 @@
         <div class="row d-flex align-items-center">
 
           <div class="col-lg-2 col-md-4 col-6">
-            <img src="{{ url_for('static', filename='assets/img/clients/client-1.png')}}" class="img-fluid" alt="">
+            <img src="{{ url_for('static', filename='assets/img/clients/keras.png')}}" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6">
-            <img src="{{ url_for('static', filename='assets/img/clients/client-2.png')}}" class="img-fluid" alt="">
+            <img src="{{ url_for('static', filename='assets/img/clients/download.png')}}" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6">
-            <img src="{{ url_for('static', filename='assets/img/clients/client-3.png')}}" class="img-fluid" alt="">
+            <img src="{{ url_for('static', filename='assets/img/clients/pytorch.png')}}" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6">
-            <img src="{{ url_for('static', filename='assets/img/clients/client-4.png')}}" class="img-fluid" alt="">
+            <img src="{{ url_for('static', filename='assets/img/clients/matplot.png')}}" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6">
-            <img src="{{ url_for('static', filename='assets/img/clients/client-5.png')}}" class="img-fluid" alt="">
+            <img src="{{ url_for('static', filename='assets/img/clients/sklearn.png')}}" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6">
-            <img src="{{ url_for('static', filename='assets/img/clients/client-6.png')}}" class="img-fluid" alt="">
+            <img src="{{ url_for('static', filename='assets/img/clients/seaborn.png')}}" class="img-fluid" alt="">
           </div>
 
         </div>
@@ -257,15 +231,33 @@
           <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
         </div>
 
-        <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
+      <div class="row">
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
             <div class="member">
-              <img src="{{ url_for('static', filename='assets/img/team/team1.jpg')}}" alt="">
-              <h4>Walter White</h4>
-              <span>Chief Executive Officer</span>
+              <img src="{{ url_for('static', filename=docs.b[0]['filename'])}}" alt="">
+              <h4>{{ docs.b[0]['name'] }}</h4>
+              <span>{{ docs.b[0]['post'] }}</span>
               <p>
-                Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
+                  {{ docs.b[0]['quote'] }}
               </p>
+              <div class="social">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/dsac_aitr/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.linkedin.com/groups/9162826/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          {% for i in range(17) %}
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
+            <div class="member">
+
+              <img src="{{ url_for('static', filename=docs.a[i]['filename'])}}" alt="">
+              <h4>{{ docs.a[i]['name'] }}</h4>
+              <span>{{ docs.a[i]['post'] }}</span>
+              <p>{{ docs.a[i]['quote'] }}</p>
               <div class="social">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                 <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -274,146 +266,11 @@
               </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
-            <div class="member">
-              <img src="{{ url_for('static', filename='assets/img/team/team2.jpg')}}" alt="">
-              <h4>Sarah Jhinson</h4>
-              <span>Product Manager</span>
-              <p>
-                Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
-              </p>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
-            <div class="member">
-              <img src="{{url_for('static', filename='assets/img/team/team3.jpg')}}" alt="">
-              <h4>William Anderson</h4>
-              <span>CTO</span>
-              <p>
-                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
-              </p>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
-            <div class="member">
-              <img src="{{ url_for('static', filename='assets/img/team/team4.jpg')}}" alt="">
-              <h4>Walter White</h4>
-              <span>Chief Executive Officer</span>
-              <p>
-                Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
-              </p>
-              <div class="social">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="https://www.instagram.com/dsac_aitr/" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="https://www.linkedin.com/groups/9162826/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
-            <div class="member">
-              <img src="{{ url_for('static', filename='assets/img/team/team5.jpg')}}" alt="">
-              <h4>Walter White</h4>
-              <span>Chief Executive Officer</span>
-              <p>
-                Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
-              </p>
-              <div class="social">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="https://www.instagram.com/dsac_aitr/" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="https://www.linkedin.com/groups/9162826/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
-            <div class="member">
-              <img src="{{ url_for('static', filename='assets/img/team/team6.png')}}" alt="">
-              <h4>Walter White</h4>
-              <span>Chief Executive Officer</span>
-              <p>
-                Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
-              </p>
-              <div class="social">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="https://www.instagram.com/dsac_aitr/" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="https://www.linkedin.com/groups/9162826/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
-            <div class="member">
-              <img src="{{ url_for('static', filename='assets/img/team/team1.jpg')}}" alt="">
-              <h4>Walter White</h4>
-              <span>Chief Executive Officer</span>
-              <p>
-                Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
-              </p>
-              <div class="social">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="https://www.instagram.com/dsac_aitr/" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="https://www.linkedin.com/groups/9162826/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
-            <div class="member">
-              <img src="{{ url_for('static', filename='assets/img/team/team1.jpg')}}" alt="">
-              <h4>Walter White</h4>
-              <span>Chief Executive Officer</span>
-              <p>
-                Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
-              </p>
-              <div class="social">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="https://www.instagram.com/dsac_aitr/" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="https://www.linkedin.com/groups/9162826/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
-            <div class="member">
-              <img src="{{ url_for('static', filename='assets/img/team/team1.jpg')}}" alt="">
-              <h4>Walter White</h4>
-              <span>Chief Executive Officer</span>
-              <p>
-                Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
-              </p>
-              <div class="social">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="https://www.instagram.com/dsac_aitr/" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="https://www.linkedin.com/groups/9162826/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-
+          {% endfor %}
       </div>
+
+
+</div>
     </section><!-- End Team Section -->
 
     <!-- ======= Contact Section ======= -->
@@ -456,13 +313,14 @@
         <div class="row" data-aos="fade-up">
 
           <div class="col-lg-6 ">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d535.1387303225388!2d75.94290012075983!3d22.821302161040627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1697043176880!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d535.1387303225388!2d75.94290012075983!3d22.821302161040627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1697043176880!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
 
           <div class="col-lg-6">
 
 
+                <form method="POST" class="centered-form card" style="background-color: #a9deff;left: 8px">
 
-                <form method="POST" class="centered-form card" style="background-color: #a9deff ">
                   {{ form.hidden_tag() }}
                         <div class="card-body">
                             {{ form.names.label }}
@@ -494,7 +352,7 @@
                             {{ form.message.label }}
                             {{ form.message }}
                         <div class=" btn align-center ">
-                            <input type="submit" value="Submit">
+                        {{ form.submit }}
                         </div>
                         </div>
                     </form>
@@ -556,7 +414,9 @@
             <h4>Our Newsletter</h4>
             <p>However, if there are many people who do not know what I read, then I will read our great fault</p>
             <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
+                <label>
+                    <input type="email" name="email">
+                </label><input type="submit" value="Subscribe">
             </form>
 
           </div>
@@ -579,16 +439,21 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-{#  <script src="{{url_for('static', filename='assets/vendor/aos/aos.js')}}"></script>#}
-{#  <script src="{{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>#}
-{#  <script src="{{ url_for('static', filename='assets/vendor/glightbox/js/glightbox.min.js')}}"></script>#}
-{#  <script src="{{ url_for('static', filename='assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>#}
-{#  <script src="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.js')}}"></script>#}
-{#  <script src="{{ url_for('static', filename='assets/vendor/php-email-form/validate.js')}}"></script>#}
+  <script src="{{url_for('static', filename='assets/vendor/aos/aos.js')}}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/php-email-form/validate.js')}}"></script>
 
   <!-- Template Main JS File -->
   <script src="{{ url_for('static', filename='assets/js/main.js')}}"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+  <script>
+      AOS.init();
+  </script>
+
 </body>
 
 </html>

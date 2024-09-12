@@ -1,57 +1,13 @@
-from flask import Flask, render_template, redirect, flash
-from flask_sqlalchemy import SQLAlchemy
-from flask_wtf import FlaskForm
-from wtforms import StringField, IntegerField, SelectField, TextAreaField
-from wtforms.validators import InputRequired, Email, Length
+from flask import Flask, render_template, redirect, flash, url_for
 from sqlalchemy.exc import IntegrityError
+import docs
+from models import db,Blog, Message, Membership
+from forms import Blogform, Messageform, MembershipForm
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///dsac.db'
 app.config['SECRET_KEY'] = 'atworkofdsac'
-db = SQLAlchemy(app)
-
-
-class Membership(db.Model):
-    name = db.Column(db.String, nullable=False)
-    enrollment = db.Column(db.String, unique=True, nullable=False, primary_key=True)
-    email = db.Column(db.String, unique=True, nullable=False)
-    branch = db.Column(db.String, nullable=False)
-    year = db.Column(db.String, nullable=False)
-    interest = db.Column(db.String, nullable=False)
-    reason = db.Column(db.String, nullable=False)
-
-
-class Message(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String, nullable=False)
-    email = db.Column(db.String, unique=True, nullable=False)
-    subject = db.Column(db.String, nullable=False)
-    message = db.Column(db.String, nullable=False)
-
-
-class MyForm(FlaskForm):
-    names = StringField('Full Name', validators=[InputRequired(), Length(max=100)])
-    enrollment = IntegerField('Enrollment Number', validators=[InputRequired()])
-    email = StringField('Email', validators=[InputRequired(), Email()])
-    branch = SelectField('Branch', choices=[('Computer Science 1', 'CS1'), ('Computer Science 2', 'CS2'),
-                                            ('Computer Science 3', 'CS3'), ('Computer Science 4', 'CS4'),
-                                            ('Computer Science 5', 'CS5'), ('Information Technology 1', 'IT1'),
-                                            ('Information Technology 2', 'IT2'), ('Data Science', 'DS'),
-                                            ('Internet of things', 'IoT'),
-                                            ('Computer Science and Information Technology 1', 'CSIT1'),
-                                            ('Computer Science and Information Technology 2', 'CSIT2'),
-                                            ('Computer Science and Information Technology 3', 'CSIT3')])
-    year = SelectField('Year',
-                       choices=[('1', 'First Year'), ('2', 'Second Year'), ('3', 'Third Year'), ('4', 'Fourth Year')])
-    interest = StringField('Interest', validators=[InputRequired(), Length(max=100)])
-    reason = TextAreaField('Reason for Interest', validators=[InputRequired(), Length(max=500)])
-
-
-class Messageform(FlaskForm):
-    names = StringField('Full Name', validators=[InputRequired(), Length(max=100)])
-    email = StringField('Email', validators=[InputRequired(), Email()])
-    subject = StringField('Subject', validators=[InputRequired(), Length(max=100)])
-    message = TextAreaField('Message', validators=[InputRequired(), Length(max=500)])
+db.init_app(app)
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -69,14 +25,12 @@ def home():
         db.session.add(message_to_database)
         db.session.commit()
         flash('Your message has been sent to the team', 'success')
-        return redirect('/')
+        return redirect(url_for('home'))
 
-    return render_template('index.html', form=form)
-
-
+    return render_template('index.html', form=form, docs=docs)
 @app.route('/membership', methods=['GET', 'POST'])
 def membership():
-    form = MyForm()
+    form = MembershipForm()
 
     if form.validate_on_submit():
         name = form.names.data
@@ -88,16 +42,44 @@ def membership():
         reason = form.reason.data
         try:
             # Create a Membership object and add it to the database
-            membership = Membership(name=name, enrollment=enrollment, email=email, branch=branch, year=year,
-                                    interest=interest, reason=reason)
-            db.session.add(membership)
+            db.session.add(Membership(name=name, enrollment=enrollment, email=email, branch=branch, year=year,
+                                      interest=interest, reason=reason)
+                           )
             db.session.commit()
             flash('Your membership request has been submitted', 'success')
-            return redirect('home')
+            return redirect(url_for('home'))
         except IntegrityError as e:
             db.session.rollback()
             flash('An integrity error occurred. This email address is already in use.', 'error')
     return render_template('membership.html', form=form)
+
+
+@app.route('/create', methods=['GET', 'POST'])
+def create_post():
+    form = Blogform()
+
+    if form.validate_on_submit():
+        title = form.title.data
+        content = form.content.data
+        author = form.author.data
+        author_designation = form.author_designation.data
+        new_post = Blog(title=title, content=content, author=author, author_designation=author_designation)
+        db.session.add(new_post)
+        db.session.commit()
+        return redirect(url_for('home'))
+
+    return render_template('createblog.html', form=form)
+
+
+@app.route('/show_post')
+def show_post():
+    posts = Blog.query.all()
+    print(posts)
+    return render_template('readblog.html', posts=posts)
+@app.route('/post/<int:post_id>')
+def view_post(post_id):
+    post = Blog.query.get_or_404(post_id)
+    return render_template('post.html', post=post)
 
 
 with app.app_context():

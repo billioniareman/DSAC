@@ -1,14 +1,3 @@
-/**
-* Template Name: Day
-* Updated: Mar 10 2023 with Bootstrap v5.2.3
-* Template URL: https://bootstrapmade.com/day-multipurpose-html-template-for-free/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -43,7 +32,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #001f7b;
+  background: #fff;
   width: 40px;
   height: 40px;
   transition: all 0.4s;
@@ -51,7 +40,7 @@ h6 {
 
 .back-to-top i {
   font-size: 28px;
-  color: #fff;
+  color: #1e2125;
   line-height: 0;
 }
 
@@ -326,8 +315,18 @@ h6 {
     display: block;
   }
 
-  .navbar ul {
-    display: none;
+  #navbar ul {
+    display: none; /* Hide the navigation links on smaller screens */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 1;
+  }
+  #navbar ul.active {
+    display: flex; /* Show the navigation links when the mobile menu icon is clicked */
   }
 }
 
@@ -736,7 +735,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cta-bg.jpg") fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)),fixed center center;
   background-size: cover;
   padding: 120px 0;
 }
@@ -1201,8 +1200,8 @@ section {
   font-size: 14px;
 }
 
-.contact .php-email-form input::focus,
-.contact .php-email-form textarea::focus {
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
   background-color: #001f7b;
 }
 
@@ -1450,7 +1449,6 @@ height: 100%;
     margin: 0 auto; /* Center the form horizontally */
     padding: 20px; /* Add some padding for better visual appearance */
     border: 1px solid #ccc; /* Add a border for the form */
-    background-image: url('assets/img/favicon2.png') ;
-    background-color: white ; ;
+    background-color: blanchedalmond ; ;
 }
 

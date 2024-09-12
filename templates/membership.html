@@ -11,138 +11,214 @@
 
   <!-- Favicons -->
   <link href="{{ url_for('static', filename='assets/img/favicon.png') }}" rel="icon">
-  <link href="{{ url_for('static', filename='assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+  <link href="{{ url_for('static', filename='assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="{{ url_for('static', filename='assets/vendor/aos/aos.css')}}" rel="stylesheet">
-  <link href="{{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-  <link href="{{ url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
-  <link href="{{ url_for('static', filename='assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
-  <link href="{{ url_for('static', filename='assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
-  <link href="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/aos/aos.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="{{ url_for('static', filename='assets/css/style.css')}}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/css/style.css') }}" rel="stylesheet">
 
+  <style>
+    /* Adjust the header and main content padding to avoid overlap */
+    header {
+      background-color: #fff; /* Adjust if needed */
+      height: 80px; /* Adjust based on your design */
+      z-index: 1000; /* Ensure it's above other content */
+      position: fixed;
+      top: 0;
+      width: 100%;
+      border-bottom: 1px solid #ddd; /* Optional: Adds a bottom border to the header */
+    }
 
+    body {
+      margin: 0;
+      padding: 0;
+      padding-top: 80px; /* Adjust based on header height */
+    }
+
+    .centered-form {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-control {
+      margin-bottom: 15px;
+    }
+
+    .form-control label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-control input,
+    .form-control textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    .errors {
+      color: red;
+      list-style: none;
+      padding: 0;
+      margin: 5px 0 0 0;
+    }
+
+    footer {
+      background: #f9f9f9;
+      padding: 30px 0;
+    }
+
+    footer .footer-top {
+      padding: 30px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    footer .footer-info,
+    footer .footer-links,
+    footer .footer-newsletter {
+      margin-bottom: 20px;
+    }
+
+    .footer-info h3 {
+      margin-bottom: 20px;
+    }
+
+    .footer-info p {
+      margin-bottom: 20px;
+    }
+
+    .footer-info .social-links a {
+      margin-right: 10px;
+    }
+
+    .footer-links ul,
+    .footer-newsletter form {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-links ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-newsletter input[type=email] {
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin-right: 10px;
+    }
+
+    .footer-newsletter input[type=submit] {
+      padding: 10px 20px;
+      border: none;
+      background: #007bff;
+      color: #fff;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 
-<body style="background-color: #0a58ca">
-
-  <!-- ======= Top Bar ======= -->
-  <section id="topbar" class="d-flex align-items-center">
-    <div class="container d-flex justify-content-center justify-content-md-between">
-      <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope-fill"></i><a href="mailto:dsac@acropolis.in">dsac@acropolis.in</a>
-        <i class="bi bi-phone-fill phone-icon"></i> +91 9893023657
-      </div>
-      <div class="social-links d-none d-md-block">
-
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="https://www.instagram.com/dsac_aitr/" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="https://www.linkedin.com/groups/9162826/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div>
-    </div>
-  </section>
+<body style="background-image: url('{{ url_for('static', filename='assets/img/oldabout.jpg') }}'); background-size: cover; background-attachment: fixed;">
 
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
+      <img style="height: 60px; width: auto; margin-right: 15px;" src="{{ url_for('static', filename='assets/img/favicon.png') }}" alt="">
 
-      <img style="height:10%; width:10%; margin-right:0px;"  src="{{url_for('static',filename='assets/img/favicon.png')}}">
-
-      <h1 style="text-align:left;" class="logo"><a href="/">DSAC</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <h1 class="logo" style="margin: 0;"><a href="/">DSAC</a></h1>
 
       <nav id="navbar" class="navbar">
-
         <ul>
-          <li><a class="nav-link scrollto " href="/">Home</a></li>
+          <li><a class="nav-link scrollto" href="/">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li><a class="nav-link" href="/membership" >Membership</a></li>
+          <li><a class="nav-link" href="/membership">Membership</a></li>
+          <li><a class="nav-link" href="/show_post">Blog</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-
     </div>
   </header><!-- End Header -->
 
+  <!-- ======= Top Bar ======= -->
 
 
-
-
-
+  <!-- Main Content -->
   <div class="centered-form">
-  <form method="post" >
-        {{ form.hidden_tag() }}
-        <div >
-            {{ form.names.label }}
-            {{ form.names(size=40) }}
-            {% if form.names.errors %}
-          <ul class="errors">
-            {% for error in form.names.errors %}
-              <li>{{ error }}</li>
-            {% endfor %}
-          </ul>
+    <form method="post">
+      {{ form.hidden_tag() }}
+      <div class="form-control">
+        {{ form.names.label }}
+        {{ form.names(size=40) }}
+        {% if form.names.errors %}
+        <ul class="errors">
+          {% for error in form.names.errors %}
+          <li>{{ error }}</li>
+          {% endfor %}
+        </ul>
         {% endif %}
-        </div>
-        <div>
-            {{ form.enrollment.label }}
-            {{ form.enrollment }}
-        </div>
-        <div>
-            {{ form.email.label }}
-            {{ form.email }}
-            {% if form.email.errors %}
-          <ul class="errors">
-            {% for error in form.email.errors %}
-              <li>{{ error }}</li>
-            {% endfor %}
-          </ul>
-        {% endif %}
-        </div>
-        <div>
-            {{ form.branch.label }}
-            {{ form.branch }}
-        </div>
-        <div>
-            {{ form.year.label }}
-            {{ form.year }}
-        </div>
-        <div>
-            {{ form.interest.label }}
-            {{ form.interest(size=40) }}
-        </div>
-        <div>
-            {{ form.reason.label }}
-            {{ form.reason(cols=40, rows=6) }}
-        </div>
-        <div>
-            <input type="submit" value="Submit">
-        </div>
-    </form>
       </div>
-
-
-
-
-
-
-
+      <div class="form-control">
+        {{ form.enrollment.label }}
+        {{ form.enrollment }}
+      </div>
+      <div class="form-control">
+        {{ form.email.label }}
+        {{ form.email }}
+        {% if form.email.errors %}
+        <ul class="errors">
+          {% for error in form.email.errors %}
+          <li>{{ error }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+      <div class="form-control">
+        {{ form.branch.label }}
+        {{ form.branch }}
+      </div>
+      <div class="form-control">
+        {{ form.year.label }}
+        {{ form.year }}
+      </div>
+      <div class="form-control">
+        {{ form.interest.label }}
+        {{ form.interest(size=40) }}
+      </div>
+      <div class="form-control">
+        {{ form.reason.label }}
+        {{ form.reason(cols=40, rows=6) }}
+      </div>
+      <div>
+        {{ form.submit }}
+      </div>
+    </form>
+  </div>
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
         <div class="row">
-
           <div class="col-lg-4 col-md-6">
             <div class="footer-info">
               <h3>DSAC</h3>
@@ -179,7 +255,7 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Data analysis</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Machine Learning</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Data Visulation</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Data Visualization</a></li>
             </ul>
           </div>
 
@@ -187,21 +263,20 @@
             <h4>Our Newsletter</h4>
             <p>However, if there are many people who do not know what I read, then I will read our great fault</p>
             <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
+              <input type="email" name="email" placeholder="Your email address">
+              <input type="submit" value="Subscribe">
             </form>
-
           </div>
-
         </div>
       </div>
     </div>
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Dsac</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>DSAC</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        Designed by <a href="#">DsacDesigners</a>
+        Designed by <a href="#">DSAC Designers</a>
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -210,15 +285,15 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="{{url_for('static', filename='assets/vendor/aos/aos.js')}}"></script>
-  <script src="{{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-  <script src="{{ url_for('static', filename='assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
-  <script src="{{ url_for('static', filename='assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
-  <script src="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
-  <script src="{{ url_for('static', filename='assets/vendor/php-email-form/validate.js')}}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/aos/aos.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/php-email-form/validate.js') }}"></script>
 
   <!-- Template Main JS File -->
-  <script src="{{ url_for('static', filename='assets/js/main.js')}}"></script>
+  <script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
 
 </body>
 
